@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html{
+    font-size: 14px;
+    background-image:url('../kepek/back.webp'); 
+    background-size: cover;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    color: white;
+    align-self: center;
+    margin: 0 auto;
+    background:black;
+}
+h1{
+    text-align: center;
+    height: 2rem;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    color: orange;
+}
+.header{
+    background-color:black ;
+}
+
+.header_mobil{
+display: block;
+padding-top: 15px;
+}
+
+.header_normal{
+display: none;
+padding-top: 15px;
+}
+
+.menu{
+    list-style: none;
+    position: sticky;
+    top:0;
+    background-color: black;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: orange;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: block;
+   
+}
+
+.content p{
+    line-height: 1;
+    padding:0px 5px 5px 0px;
+    margin: auto;
+}
+.content img{
+    margin: auto 0;
+}
+
+.menu li a:hover{
+    color: white;
+}
+
+@media(min-width:601px){
+.header_normal{
+    display:block;
+    size: 800px;
+}
+.header_mobil{
+    display: none;
+}
+.content p{
+    width:74.9999%;
+    padding: 5px 0px 5px 10px;
+    font-size: 1.3rem;
+    
+ 
+}
+.content img{
+    width:24.9999%;
+    float: left;
+    padding: 0px 10px 0px 0px;
+    
+
+    
+}
+.content{
+    width:79.9999%;
+    float:left;
+}
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 19.9999%;
+    float: left;
+    display: block;
+    top:0;
+    bottom:0;
+    position:relative;
+}
+}
+
